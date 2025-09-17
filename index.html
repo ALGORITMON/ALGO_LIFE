@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Мой первый сайт</title>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 2rem;
-        }
-    </style>
+    <title>ALGO_LIFE</title>
     
 </head>
 <body>
-    
-    <button class="custom-button">КНОПКА</button>
-    
-    <h1>Привет, мир!</h1>
-    <p>Это мой первый сайт на GitHub Pages.</p>
+    <header class="header">
+        <h1>ALGO_LIFE</h1>
+        <nav>
+            <a class="button-general" href="index.html">Главная</a>
+            <a class="button-in-us" href="in_us.html">О Нас</a>
+            <a class="button-contacts" href="#">Контакты</a>
+        </nav>
+        <nav>
+             <a class="button-login" href="#">ВОЙТИ</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <h2>Добро пожаловать</h2>
+            <p>на мой сайт-блог.</p>
+        </section>
+        <section class="news">
+            <article>
+                <h3>ГЛАВНОЕ СЕГОДНЯ</h3>
+                <p>Сайт был создан 17.09.2025</p>
+            </article>
+            <article>
+                <h3>ОБНОВЛЕНИЯ</h3>
+                <p>Этот сайт будет редко обновляться. . .</p>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h3>РЕКЛАМА</h3>
+        <p>Здесь могла бы быть Ваша реклама.</p>
+    </aside>
+
+    <footer>
+        <p>©️ 2025 ALGO_LIFE. Все авторские права защещины</p>
+    </footer>
+
 </body>
 </html>
