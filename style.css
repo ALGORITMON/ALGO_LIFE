@@ -1,26 +1,158 @@
-.round-btn {
-    background-color: #4CAF50;
-    color: white;
+/*ОСНОВА*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    margin: 0;
+    background: rgba(200, 200, 200, 1);
+    font-family: "Calibri";
+}
+
+p {
+    color: rgba(120, 120, 120, 1);
+    margin-bottom: 2rem;
+}
+
+
+/*Части сайта*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.button-general {
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 90, 175);
     border: none;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    margin: 0 5px;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(70, 90, 175, 0.3);
+}
+
+.button-in-us {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
 }
 
-.round-btn:hover {
+.button-contacts {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.button-login {
+    font-family: monospace;
+    background-color: rgb(70, 90, 175);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(70, 89, 175, 0.3);
+}
+
+.button-general:hover {
+    background-color: rgba(70, 90, 175);
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 89, 175, 0.4);
+}
+
+.button-general:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(70, 89, 175, 0.3);
+}
+
+.button-in-us:hover, .button-contacts:hover {
     background-color: #3e8e41;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
 }
 
-.round-btn:active {
+.button-in-us:active, .button-contacts:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+.button-login:hover {
+    background-color: rgb(75, 175, 80);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.button-login:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+footer {
+    text-align: center;
+}
+
+/* Дополнительные стили для остальных элементов */
+.intro, .news, aside, footer {
+    padding: 1rem;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
