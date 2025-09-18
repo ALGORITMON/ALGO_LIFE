@@ -6,5 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ALGO_LIFE</title>
-    
+
 </head>
+<body>
+    <header class="header">
+        <h1>ALGO_LIFE</h1>
+        <nav>
+            <a class="button-general" href="index.html">Главная</a>
+            <a class="button-in-us" href="in_us.html">О Нас</a>
+            <a class="button-contacts" href="#">Контакты</a>
+        </nav>
+        <nav>
+             <a class="button-login" href="#">ВОЙТИ</a>
+        </nav>
+    </header>
+
+    <aside>
+        <h3 align:center>НЕДОСТУПНО</h3>
+        <p align: center>Сайт находится в бета-версии и не имеет функции регистрации или входа.</p>
+    </aside>
+
+    <footer>
+        <p>©️ 2025 ALGO_LIFE. Все авторские права защещины</p>
+    </footer>
+
+</body>
+</html>
