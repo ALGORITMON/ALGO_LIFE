@@ -1,4 +1,5 @@
-/*ОСНОВА*/
+                                    /*ОСНОВА*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,13 +11,19 @@ body {
     font-family: "Calibri";
 }
 
-p {
-    color: rgba(120, 120, 120, 1);
-    margin-bottom: 2rem;
+.logo {
+    height: 60px; /* Высота логотипа */
+    margin: 10px 0px 10px;
+    border-radius: 10px;
 }
 
+p {
+    color: rgba(120, 120, 120, 1);
+    margin-bottom
+}
 
-/*Части сайта*/
+                                    /*ЧАСТИ САЙТА*/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +45,9 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.button-general {
+                                    /*СТРАНИЦА - ГЛАВНАЯ*/
+
+.page_general .button-general {
     font-family: monospace;
     background-color: rgb(255, 255, 255);
     color: rgb(70, 90, 175);
@@ -56,7 +65,7 @@ p {
     box-shadow: 0 4px 8px rgba(70, 90, 175, 0.3);
 }
 
-.button-in-us {
+.page_general .button-in-us {
     font-family: monospace;
     background-color: rgb(75, 175, 80);
     color: rgb(255, 255, 255);
@@ -74,7 +83,7 @@ p {
     box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
 }
 
-.button-contacts {
+.page_general .button-contacts {
     font-family: monospace;
     background-color: rgb(75, 175, 80);
     color: rgb(255, 255, 255);
@@ -91,6 +100,189 @@ p {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
 }
+
+.page_general .button-general:hover {
+    background-color: rgba(70, 90, 175);
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 89, 175, 0.4);
+}
+
+.page_general .button-general:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(70, 89, 175, 0.3);
+}
+
+.page_general .button-in-us:hover, .page_general .button-contacts:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.page_general .button-in-us:active, .page_general .button-contacts:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+                                    /*СТРАНИЦА - О НАС*/
+
+.page_in_us .button-general {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(75, 175, 80, 0.3);
+}
+
+.page_in_us .button-in-us {
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 90, 175);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(70, 90, 175, 0.3);
+}
+
+.page_in_us .button-contacts {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.page_in_us .button-in-us:hover {
+    background-color: rgba(70, 90, 175);
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 89, 175, 0.4);
+}
+
+.page_in_us .button-in-us:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(70, 89, 175, 0.3);
+}
+
+.page_in_us .button-general:hover, .page_in_us .button-contacts:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.page_in_us .button-general:active, .page_in_us .button-contacts:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+                                    /*СТРАНИЦА - КОНТАКТЫ*/
+
+.page_contacts .button-general {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(75, 175, 80, 0.3);
+}
+
+.page_contacts .button-in-us {
+    font-family: monospace;
+    background-color: rgb(75, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.page_contacts .button-contacts {
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 90, 175);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(70, 90, 175, 0.3);
+}
+
+.page_contacts .button-contacts:hover {
+    background-color: rgba(70, 90, 175);
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 89, 175, 0.4);
+}
+
+.page_contacts .button-contacts:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(70, 89, 175, 0.3);
+}
+
+.page_contacts .button-in-us:hover, .page_contacts .button-general:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.page_contacts .button-in-us:active, .page_contacts .button-general:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+                                    /*ОСТАЛЬНОЕ*/
 
 .button-login {
     font-family: monospace;
@@ -110,29 +302,6 @@ p {
     box-shadow: 0 4px 8px rgba(70, 89, 175, 0.3);
 }
 
-.button-general:hover {
-    background-color: rgba(70, 90, 175);
-    color: rgb(255, 255, 255);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(70, 89, 175, 0.4);
-}
-
-.button-general:active{
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(70, 89, 175, 0.3);
-}
-
-.button-in-us:hover, .button-contacts:hover {
-    background-color: #3e8e41;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
-}
-
-.button-in-us:active, .button-contacts:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
-}
-
 .button-login:hover {
     background-color: rgb(75, 175, 80);
     transform: translateY(-2px);
@@ -149,6 +318,7 @@ footer {
 }
 
 /* Дополнительные стили для остальных элементов */
+
 .intro, .news, aside, footer {
     padding: 1rem;
     background: white;

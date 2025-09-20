@@ -93,7 +93,7 @@ input:focus~label {
     text-decoration: none;
 }
 
-.login-button {
+.auth .login-button {
     display: flex;
     width: 100%;
     height: 50px;
@@ -111,16 +111,46 @@ input:focus~label {
     box-shadow: 0 0px 20px rgba(0, 238, 255, 0.5);
 }
     
-.login-button:hover {
+.auth .login-button:hover {
     color: #0ef;
     background: #1f293a;
     box-shadow: 0 0px 12px rgba(0, 238, 255, 0.4);
 }
 
-.login-button:active {
+.auth .login-button:active {
     color: #1f293a;
     background: #0ef;
     box-shadow: 0 0px 6px rgba(0, 238, 255, 0.3);
+}
+
+.regis .login-button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 100, 200);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 0px 20px rgba(0, 100, 255, 0.5);
+}
+    
+.regis .login-button:hover {
+    color: rgb(0, 100, 200);
+    background: #1f293a;
+    box-shadow: 0 0px 12px rgba(0, 100, 200, 0.4);
+}
+
+.regis .login-button:active {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 100, 200);
+    box-shadow: 0 0px 6px rgba(0, 100, 200, 0.3);
 }
 
 .signup-link {
